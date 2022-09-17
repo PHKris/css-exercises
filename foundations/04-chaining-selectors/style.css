@@ -1,0 +1,12 @@
+/* External CSS */
+
+.avatar.proportioned {
+    height: auto;
+    width: 300px;
+}
+
+.avatar.distorted {
+    height: 400px;
+    width: 200px;
+}
+/* Understand the question fully. Twice the size of 200px width not 400px. */
