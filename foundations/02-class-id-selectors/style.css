@@ -1,3 +1,34 @@
 /* External CSS
 ***************/
 
+p {
+    background-color: lightpink;
+    font-family: verdana, dejaVu Sans, sans-serif;
+    font-size: 24px;
+}
+/*************************************************
+p {
+    background-color: lightpink;
+    font-family: verdana, dejaVu Sans, sans-serif;
+    font-size: 24px;
+}
+
+This was used previously, which might cause an formatting issues down the line due to the rules of specificity. As explained in line "" below.
+**************************************************/
+
+.number-2 {
+    font-size: 36px;
+    color: blue;
+}
+/* Odd problem. When inputting the color declaration first. The second declaration such as fron-size does not work. So the order had to be this way. */
+
+.number-3 {
+    font-size: 24px;
+}
+/* Urgent. Issue of specificity. If you noticed, you used the type selector on the "First element", then on the "Third element" you added a class selector within the type selector. This would show another format if specificity did not intervene (E.g. ID is superior to class > type > universal and so on). */
+
+#number-4 {
+    background-color: lightgreen;
+    font-size: 24px;
+    font-weight: bold;
+}
