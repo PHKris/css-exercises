@@ -1,7 +1,8 @@
 body{
     font-family:Arial, Helvetica, sans-serif
   }
-  
+
+/**************************
   .para,
   .small-para {
     color: hsl(0, 0%, 0%);
@@ -16,7 +17,21 @@ body{
   .para {
     font-size: 22px;
   }
-  
+**************************/
+
+    .para {
+        font-size: 22px;  
+        font-weight: 800;
+        color: hsl(0, 0%, 0%);
+    }
+
+    .para.small-para {
+        font-size: 14px;
+        font-weight: 800;
+        color: hsl(0, 0%, 0%)
+    }
+
+/*****************************************
   .confirm {
     background: green;
     color: white;
@@ -28,7 +43,26 @@ body{
     color: rgb(0, 0, 0);
     font-size: 20px;
   }
-  
+******************************************/
+
+    #confirm-button,
+        #cancel-button {
+            font-size: 20px;
+    }
+
+    .button.confirm {
+        background: green;
+        color: white;
+        font-weight: bold;
+    }
+
+    .button.cancel {
+        background: rgb(255, 255, 255);
+        color: rgb(0, 0, 0)
+    }
+
+/************************
+
   .child {
     color: rgb(0, 0, 0);
     font-weight: 800;
@@ -40,3 +74,18 @@ body{
     font-size: 22px;
     font-weight: 100;
   }
+
+*************************/
+
+    .text {
+        font-size: 22px;
+        font-weight: 100;
+        color: rgb(0, 0, 0)
+    }
+
+/* Or use div.text.child */
+    .text .text.child {
+        font-size: 14px;
+        font-weight: 800;
+        color: rgb(0, 0, 0)
+    }
